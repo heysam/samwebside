@@ -45,3 +45,4 @@ static3==0.7.0
 urllib3==1.13.1
 
 
+whitenoise-5.0.1
