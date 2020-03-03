@@ -26,5 +26,3 @@ urlpatterns = [
     # path(url, view, name=None)
 
 ]
-from whitenoise.django import DjangoWhiteNoise
-application = DjangoWhiteNoise(application)
