@@ -1,1 +1,1 @@
-web: gunicorn --pythonpath testsamweb mysitestsamwebte.wsgi
+web: gunicorn --pythonpath testsamweb testsamwebte.wsgi
