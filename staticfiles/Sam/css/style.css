@@ -152,35 +152,34 @@ By default, top navigation bar uses "fixed" position
 /*---------------------------------------------------
 SECTION WRAPS
 ---------------------------------------------------*/
-
 /* Header Wrap */
 
-#headerwrap {
-  background: url(../img/header-bg.jpg) no-repeat center top;
+.headerwrap {
+   // background: url(../img/header-bg.jpg) no-repeat center center /cover;
   margin-top: 60px;
-  padding-top: 140px;
   text-align: center;
-  background-attachment: relative;
-  background-position: center center;
-  min-height: 700px;
-  width: 100%;
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+
 }
 
-#headerwrap h1 {
-  font-size: 80px;
+.carousel-caption {
+    position: absolute;
+    height: 50%;
+    //align: center;
+    //valign:center;
+
+}
+
+.carousel-caption .color{
+    background: rgba(30%,0%,0%,0.6);
+
+}
+#carouselExampleIndicators h1 {
+  font-size: 50px;
   color: white;
-}
 
-#headerwrap h3 {
-  font-size: 20px;
+}
+#carouselExampleIndicators h3 {
+  font-size: 10px;
   color: white;
 }
 
