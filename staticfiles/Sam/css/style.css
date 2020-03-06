@@ -20,7 +20,8 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway";
   font-weight: 300;
-  color: #333;
+  color: #555555;
+  font-weight:bolder;
 }
 
 /* Paragraph & Typographic */
@@ -64,7 +65,7 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #000000;
   margin: 1em 0;
   padding: 0;
 }
@@ -88,11 +89,10 @@ hr {
 }
 
 #topbar-inner {
-  background: #111;
+  background: rgba(1%,1%,1%,0.8);
   line-height: 0;
   text-align: center;
 }
-
 /*
 Top Bar
 
@@ -114,6 +114,7 @@ By default, top navigation bar uses "fixed" position
   display: block;
   float: left;
   padding: 0;
+
 }
 
 #section-topbar ul#nav a {
@@ -154,18 +155,13 @@ SECTION WRAPS
 ---------------------------------------------------*/
 /* Header Wrap */
 
-.headerwrap {
-   // background: url(../img/header-bg.jpg) no-repeat center center /cover;
-  margin-top: 60px;
-  text-align: center;
 
-}
 
 .carousel-caption {
     position: absolute;
     height: 50%;
-    //align: center;
-    //valign:center;
+    align: center;
+    valign:center;
 
 }
 
@@ -262,7 +258,8 @@ SECTION WRAPS
 }
 
 .desc p {
-  color: #2f2f2f;
+  color: #000000;
+  font-weight:bold;
 }
 
 .desc t {
@@ -333,7 +330,7 @@ sm {
 }
 
 .contact-form .loading:before {
-  content: "";
+  content: "";ƒ
   display: inline-block;
   border-radius: 50%;
   width: 24px;
