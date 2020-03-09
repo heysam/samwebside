@@ -29,18 +29,18 @@ class About(models.Model):
         return self.P_about
 
 
-class Educattion(models.Model):
-    E_Person = models.ForeignKey("Person", on_delete=models.CASCADE)
+class Education(models.Model):
+    P_Person = models.ForeignKey("Person", on_delete=models.CASCADE)
     E_university = models.CharField(max_length=20)
     E_major = models.CharField(max_length=20)
     E_graduate = models.DateField()
 
     def __str__(self):
-        return self.E_university, self.E_major, self.E_graduate, self.E_graduate
+        return self.E_university
 
 
 class Work(models.Model):
-    W_Person = models.ForeignKey("Person", on_delete=models.CASCADE)
+    P_Person = models.ForeignKey("Person", on_delete=models.CASCADE)
     W_posinion = models.CharField(max_length=20)
     W_company = models.CharField(max_length=20)
     W_content = models.CharField(max_length=200)
@@ -48,11 +48,11 @@ class Work(models.Model):
     W_end_date = models.DateField()
 
     def __str__(self):
-        return self.W_posinion, self.W_company, self.W_content, self.W_start_date, self.W_end_date
+        return self.W_posinion
 
 
 class Recent(models.Model):
-    R_Person = models.ForeignKey("Person", on_delete=models.CASCADE)
+    P_Person = models.ForeignKey("Person", on_delete=models.CASCADE)
     R_recent = models.CharField(max_length=200)
 
     def __str__(self):
@@ -60,7 +60,7 @@ class Recent(models.Model):
 
 
 class Skills(models.Model):
-    S_Person = models.ForeignKey("Person", on_delete=models.CASCADE)
+    P_Person = models.ForeignKey("Person", on_delete=models.CASCADE)
     S_skills = models.CharField(max_length=30)
 
     def __str__(self):
@@ -68,13 +68,13 @@ class Skills(models.Model):
 
 
 class Portfolio(models.Model):
-    Por_Person = models.ForeignKey("Person", on_delete=models.CASCADE)
+    P_Person = models.ForeignKey("Person", on_delete=models.CASCADE)
     Por_name = models.CharField(max_length=20)
     Por_content = models.CharField(max_length=200)
     Por_web = models.CharField(max_length=200)
-
-    def __str__(self):
-        return self.Por_name, self.Por_content, self.Por_web
+    @classmethod
+    def Portfolio(cls):
+        return cls.Por_name,cls.Por_content,cls.Por_web
 ###############################################################################
 # 結束後
 # 1.生成遷移文件 python manage.py makemigrations 在migrations目錄下生成一個遷移文件，數據庫中無資料
