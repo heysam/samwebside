@@ -19,7 +19,7 @@ html5lib==0.999
 httplib2==0.18.0
 idna==2.0
 Jinja2==2.8
-lxml==3.5.0
+lxml==4.6.2
 
 
 appnope==0.1.0
